@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>Laptop</h1>
+    <div class="showcase">
+      <div class="product-wrapper">
+        <div class="product-img-wrapper">
+          <img id="product-img" src="img/product.png" alt="The product">
+          <!--<div class="svg-container">-->
+          <!--</div>-->
+        </div>
+        <div onclick="iconClick(1)" onmouseover="mOver(this)" onmouseout="mOut(this)" class="info" id="icon1">
+          <i  class="material-icons" style="font-size:48px;">code</i>
+        </div>
+        <div onclick="iconClick(2)" onmouseover="mOver(this)" onmouseout="mOut(this)" class="info" id="icon2">
+          <i class="material-icons" style="font-size:48px;">schedule</i>
+        </div>
+        <div onclick="iconClick(3)" onmouseover="mOver(this)" onmouseout="mOut(this)" class="info" id="icon3">
+          <i class="material-icons" style="font-size:48px;">timeline</i>
+        </div>
+        <div onclick="iconClick(4)" onmouseover="mOver(this)" onmouseout="mOut(this)" class="info" id="icon4">
+          <i class="material-icons" style="font-size:48px;">monetization_on</i>
+        </div>
+      </div>
+      <div class="details-wrapper">
+        <div class="details" id="detail-one">One</div>
+        <div class="details" id="detail-two">Two</div>
+        <div class="details" id="detail-three">Three</div>
+        <div class="details" id="detail-four">Four</div>
+      </div>
+    </div>
+  </div>
+
+  <script type="application/javascript" src="scripts.js"></script>
+</body>
+</html>

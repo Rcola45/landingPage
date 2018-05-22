@@ -1,0 +1,127 @@
+:root{
+    --item-distance: 15em;
+}
+
+body{
+    background: #555152;
+    font-family: 'Ubuntu', sans-serif ;
+}
+
+.container h1{
+    color: #EFFFCD;
+    padding-left: 10%;
+}
+
+/* Main container */
+.showcase{
+    width: 85%;
+}
+
+/* Wrapper for product image and icons*/
+.product-wrapper{
+    position: relative;
+    border: 1px;
+    width: 40%;
+    height: 30em;
+    display: inline-block;
+    margin: 30px 0 0 10%;
+}
+
+.product-img-wrapper{
+    width: 20em;
+    height: 20em;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 10%;
+    transform: translate(-30%, -40%);
+    background: #DCE9BE;
+    border-radius: 50%;
+    box-shadow: -4px 4px 4px rgba(0,0,0,0.5);
+}
+
+.product-img-wrapper img{
+    width: 18em;
+    height: 18em;
+    overflow: hidden;
+    display: block;
+    margin: 1em;
+}
+
+/* CSS for icon wrappers */
+.product-wrapper .info{
+    display: block;
+    position: absolute;
+    width: 4em;
+    height: 4em;
+    top: 50%;
+    left: 30%;
+    border-radius: 50%;
+    border: 1px solid black;
+    overflow: hidden;
+    text-align: center;
+    background: white;
+    transition: background-color 0.5s;
+    cursor: default;
+}
+
+/* The icons themselves*/
+.info>i{
+    position:relative;
+    top: calc(50% - 24px); /* Centering the icon in wrapper */
+
+}
+
+/* Placing the icons around the product image circle */
+#icon1 {
+    transform: rotate(300deg) translate(var(--item-distance)) rotate(-300deg);
+}
+#icon2{
+    transform: rotate(340deg) translate(var(--item-distance)) rotate(-340deg);
+}
+#icon3{
+    transform: rotate(20deg) translate(var(--item-distance)) rotate(-20deg);
+}
+#icon4{
+    transform: rotate(60deg) translate(var(--item-distance)) rotate(-60deg);
+}
+
+/* Details are the boxes that appear on the right when icon is clicked */
+.details-wrapper{
+    width: 40%;
+    float: right;
+}
+
+.details{
+    position: absolute;
+    right: 40px;
+    width: 40%;
+    height: 50%;
+    background: #EFFFCD;
+    border-radius: 30px;
+    display: none;
+    padding: 10px;
+}
+
+/*.svg-container{*/
+    /*position: absolute;*/
+    /*top:calc(50% - 80px);*/
+    /*left: calc(50%);*/
+    /*z-index: -1;*/
+    /*background: rgba(256,0,0,0.5);*/
+    /*border-radius: 0 45% 45% 0;*/
+    /*!*animation: pin;*!*/
+    /*animation-duration: 5s;*/
+    /*animation-iteration-count: infinite;*/
+    /*animation-timing-function: linear;*/
+    /*transform-origin: left center;*/
+    /*transform: rotate(314deg);*/
+    /*display: inline-block;*/
+    /*width: 340px;*/
+    /*height: 40%;*/
+/*}*/
+
+/*@keyframes pin{*/
+    /*from { transform: rotate(0deg); }*/
+    /*to { transform: rotate(360deg); }*/
+/*}*/
